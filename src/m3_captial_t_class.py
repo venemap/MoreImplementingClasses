@@ -263,7 +263,11 @@ class CapitalT(object):
         #     run_test method in main. Compare the graphics window to
         #     clone.pdf.
         # --------------------------------------------------------------
-        return CapitalT()
+        newT = CapitalT(self.h_rect.get_center(), self.h_rect.get_width(), self.v_rect.get_height(), self.h_rect.get_width())
+        fill = self.v_rect.fill_color
+        outline = self.v_rect.outline_color
+        newT.set_colors(fill, outline)
+        return newT
 
 
 # ----------------------------------------------------------------------
