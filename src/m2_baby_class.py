@@ -105,7 +105,7 @@ class Baby(object):
             print("Baby " + self.name + " is sleeping.")
         elif(self.H == 1):
             print("Baby " + self.name + "is awake. Time for food")
-        else: 
+        else:
             print("Baby " +self.name + "is CRYING uncontrollably! Feed the Baby!")
         self.H += 1
 
